@@ -2,6 +2,7 @@ const buildPage = function(){
     const ayat3 = document.createElement('div');
     ayat3.className = 'ayat3';
     document.body.appendChild(ayat3);
+
     let chapterNumberProvided = document.querySelector('#search_for_chapter');
     document.querySelector('#search_button').addEventListener('click', () => {
     fetch(`http://api.alquran.cloud/v1/surah/${chapterNumberProvided.value}/en.pickthall`)
@@ -11,14 +12,12 @@ const buildPage = function(){
         
         const resultsSurah = data.data.ayahs;// array of verses
         console.log(data.data.ayahs[0].text);
-        ayat3.textContent = data.data.englishName;
+        //ayat3.textContent = data.data.englishName;
+        ayat3.textContent = '';
         for (let i = 0; i < resultsSurah.length; i++){
             
             //ayat3.textContent = `${data.data.ayahs[i].text}`;
-
-            
             const searchResults3 = document.createElement('li');
-            searchResults3.textContent = '';
             searchResults3.textContent = `[${data.data.number}:${data.data.ayahs[i].numberInSurah}] ${data.data.ayahs[i].text}`;
             ayat3.appendChild(searchResults3);
         }
@@ -35,12 +34,13 @@ const buildPage = function(){
         
         console.log(data.data.text);
 
-        const ayat2 = document.createElement('div');
-        ayat2.className = 'ayat2';
-        document.body.appendChild(ayat2);
+        //const ayat2 = document.createElement('div');
+        //ayat2.className = 'ayat2';
+        //document.body.appendChild(ayat2);
+        ayat3.textContent = '';
         const searchResults2 = document.createElement('li');
         searchResults2.textContent = `[${data.data.surah.number}:${data.data.numberInSurah}] ${data.data.text}`;
-        ayat2.appendChild(searchResults2);
+        ayat3.appendChild(searchResults2);
 
         });
     })
@@ -56,15 +56,15 @@ const buildPage = function(){
             
             console.log(data.data.matches[0].text);
             const results = data.data.matches;// array of verses
-    
+            ayat3.textContent = '';
             for (let i = 0; i < results.length; i++){
                 console.log(`${results.length}`);
-                const ayat = document.createElement('div');
-                ayat.className = 'ayat';
-                document.body.appendChild(ayat);
+                //const ayat = document.createElement('div');
+                //ayat.className = 'ayat';
+                //document.body.appendChild(ayat);
                 const searchResults = document.createElement('li');
                 searchResults.textContent = `[${data.data.matches[i].surah.number}:${data.data.matches[i].numberInSurah}] ${data.data.matches[i].text}`;
-                ayat.appendChild(searchResults);
+                ayat3.appendChild(searchResults);
     
             }
         });
