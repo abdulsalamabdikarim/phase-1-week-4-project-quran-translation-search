@@ -1,4 +1,8 @@
 const buildPage = function(){
+    const resultDetailsDiv = document.createElement('div');
+    resultDetailsDiv.id = 'result_details_div';
+    document.body.appendChild(resultDetailsDiv);
+
     const versesDiv = document.createElement('div');
     versesDiv.id = 'verses_div';
     document.body.appendChild(versesDiv);
@@ -17,17 +21,18 @@ function searchForChapter(){
         
         const resultsSurah = data.data.ayahs;// array of verses
         console.log(data.data.ayahs[0].text);
-        
+        resultDetailsDiv.textContent = '';
         versesDiv.textContent = '';
         for (let i = 0; i < resultsSurah.length; i++){
             const searchResults3 = document.createElement('li');
             searchResults3.textContent = `[${data.data.number}:${data.data.ayahs[i].numberInSurah}] ${data.data.ayahs[i].text}`;
             versesDiv.appendChild(searchResults3);
+            resultDetailsDiv.textContent = `CHAPTER ${data.data.number}: ${data.data.englishName} (${data.data.englishNameTranslation})`;
+
         }
         })
         .catch(function(error){alert('Please make sure the chapter number you entered is valid')});
         chapterNumberProvided.value = '';
-        
     })
 }
 function searchForVerse(){
@@ -44,6 +49,8 @@ function searchForVerse(){
         const searchResults2 = document.createElement('li');
         searchResults2.textContent = `[${data.data.surah.number}:${data.data.numberInSurah}] ${data.data.text}`;
         versesDiv.appendChild(searchResults2);
+        resultDetailsDiv.textContent = `CHAPTER ${data.data.surah.number}: ${data.data.surah.englishName} (${data.data.surah.englishNameTranslation}) - VERSE: ${data.data.numberInSurah}`;
+
         })
         .catch(function(error){alert('Please make sure the verse and chapter number you entered are valid')});
         chapterNumberProvided2.value = '';
@@ -68,16 +75,15 @@ function searchForVerseByKeyword(){
                 searchResults.textContent = `[${data.data.matches[i].surah.number}:${data.data.matches[i].numberInSurah}] ${data.data.matches[i].text}`;
                 versesDiv.appendChild(searchResults);
             }
+            resultDetailsDiv.textContent = `Search for keyword:${keywordProvided.value}`;
+            console.log(keywordProvided.value);
+
         })
         .catch(function(error){alert('Please make sure the keyword and chapter number you entered are valid')});
         keywordProvided.value = '';
         chapterNumberProvided3.value = '';
     })
 }
-
-
-
-
 
 }
 
