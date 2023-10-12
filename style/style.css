@@ -1,0 +1,29 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#header_div{
+    padding: 5px;
+    background-color: lightslategray;
+    font-style: oblique;
+    text-align: center;
+}
+#search_bar{
+    padding: 15px;
+    background-color: lightseagreen;
+    font-style: oblique;
+    text-align: right;
+}
+#search_results_div{
+    background-color: cornsilk;
+    padding: 10px;
+    border-radius: 20px;
+    width: auto;
+}
+#verses_div{
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    width: auto;
+}
