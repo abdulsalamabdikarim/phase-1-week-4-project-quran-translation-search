@@ -5,6 +5,7 @@ body{
 #header_div{
     padding: 5px;
     background-color: lightskyblue;
+    background-image: url("https://wallpapers-clan.com/wp-content/uploads/2023/07/light-green-leaves-pattern-wallpaper.jpg");
     font-style: oblique;
     font-family: American Typewriter,serif;
     text-decoration: aliceblue;
@@ -12,10 +13,13 @@ body{
 }
 #search_div{
     padding: 15px;
-    background-color: rgb(145, 244, 155);
+    background-color: aquamarine;
     font-style: oblique;
     font-size: medium;
+    font-weight: 400;
     text-align: center;
+    border-radius: 20px;
+    background-image: url("https://cdn.hovia.com/app/uploads/aquamarine-patterned-ombre-wall-mural-plain-820x532.jpg");
 }
 #search_bar{
     display: inline-block;
@@ -30,7 +34,8 @@ body{
     border-radius: 20px;
     width: auto;
     text-align: center;
-    font-size: larger;
+    align-self: center;
+    font-size: medium;
     font-weight: 500;
 }
 #verses_div{
@@ -40,7 +45,8 @@ body{
     border-radius: 20px;
     width: auto;
     text-align: justify;
-    font-size: larger;
+    font-size: medium;
+    line-height: 40px;
 }
 .input_field{
     width: 140px;
