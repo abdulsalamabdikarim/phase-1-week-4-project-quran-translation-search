@@ -4,7 +4,7 @@ body{
 }
 #header_div{
     padding: 5px;
-    background-color: lightslategray;
+    background-color: rgb(46, 182, 227);
     font-style: oblique;
     font-family: American Typewriter,serif;
     text-decoration: aliceblue;
@@ -30,6 +30,8 @@ body{
     border-radius: 20px;
     width: auto;
     text-align: center;
+    font-size: larger;
+    font-weight: 500;
 }
 #verses_div{
     background-color: aquamarine;
@@ -38,6 +40,7 @@ body{
     border-radius: 20px;
     width: auto;
     text-align: justify;
+    font-size: larger;
 }
 .input_field{
     width: 140px;
@@ -47,17 +50,16 @@ body{
     border-radius: 7px;
     border: none;
 }
-input:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
-  }
 
 .btn{
     width: 100px;
-    height: 30px;
+    height: 35px;
     border-radius: 7px;
     background-color: rgb(46, 182, 227);
-    border: none;
 }
+input:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+  }
 button:hover {
     box-shadow: 0 0 10px rgba(0,0,0,.3);
   }
