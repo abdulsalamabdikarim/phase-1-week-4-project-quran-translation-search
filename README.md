@@ -7,7 +7,7 @@ Qur'an translation search is an app that enables the user to search for the Engl
 The application provides three search options namely:
 * Searching for a complete chapter by providing the chapter number as the search parameter.
 * Searching for an individual verses by providing the chapter number and verse number as the search parameters.
-* Searching for a collection of verses containing a desired keyword by providing the chapter number and the keyword as the search parameter.
+* Searching for a collection of verses containing a desired keyword by providing the chapter number and the keyword as the search parameters.
 
 These searches are all performed on the English translation of the Holy Qur'an by the English Muslim scholar , Muhammad Marmaduke Pickthall.
 
