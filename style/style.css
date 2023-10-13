@@ -14,11 +14,12 @@ body{
     font-style: oblique;
     text-align: right;
 }
-#search_results_div{
+#result_details_div{
     background-color: cornsilk;
     padding: 10px;
     border-radius: 20px;
     width: auto;
+    text-align: center;
 }
 #verses_div{
     background-color: aquamarine;
