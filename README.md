@@ -1,15 +1,15 @@
 # QUR'AN TRANSLATION SEARCH
-An application where you can search for verses of the Qur'an in their English translation.
+An application where you can search for verses of The Holy Qur'an in their English translation.
 
 ## Description
 Qur'an translation search is an app that enables the user to search for the English translation of verses of The Holy Qur'an.
-The application provides three search options namely:
 
+The application provides three search options namely:
 * Searching for a complete chapter by providing the chapter number as the search parameter.
 * Searching for an individual verses by providing the chapter number and verse number.
 * Searching for a collection of verses containing a desired keyword by providing the chapter number and the keyword.
 
-These searches will all be performed on the English translation of the Holy Qur'an by the English Muslim scholar , Muhammad Marmaduke Pickthall.
+These searches are all performed on the English translation of the Holy Qur'an by the English Muslim scholar , Muhammad Marmaduke Pickthall.
 
 ## Project Setup
 * Fork and clone this repository.
@@ -18,5 +18,8 @@ These searches will all be performed on the English translation of the Holy Qur'
 
 ## Author
 Authored by Abdulsalam Abdikarim Adan
+
+## License
+Licensed under the MIT License
 
 
