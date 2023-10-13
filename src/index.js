@@ -55,8 +55,6 @@ function searchForVerse(){
     fetch(`http://api.alquran.cloud/v1/ayah/${chapterNumberProvided2.value}:${verseNumberProvided.value}/en.pickthall`)
     .then(function(response){return response.json()})
     .then(function(data){
-        console.log(data);
-        console.log(data.data.text);
 
         versesDiv.textContent = ''; // Verses div is emptied before new search results arrive
         const searchResults2 = document.createElement('li');
@@ -85,14 +83,11 @@ function searchForVerseByKeyword(){
         fetch(`http://api.alquran.cloud/v1/search/${keywordProvided.value}/${chapterNumberProvided3.value}/en.pickthall`)
         .then(function(response){return response.json()})
         .then(function(data){
-            console.log(data);
-            console.log(data.data.matches[0].text);
 
             const results = data.data.matches;// array of verses
             versesDiv.textContent = ''; // Verses div is emptied before new search results arrive
             // A for loop is then used to iterate through the verses and display each inside a list element
             for (let i = 0; i < results.length; i++){
-                console.log(`${results.length}`);
                 const searchResults3 = document.createElement('li');
                 // The chapter and verse numbers are displayed just before the verse text
                 searchResults3.textContent = `[${data.data.matches[i].surah.number}:${data.data.matches[i].numberInSurah}] ${data.data.matches[i].text}`;
