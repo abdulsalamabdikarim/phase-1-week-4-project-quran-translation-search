@@ -12,7 +12,7 @@ body{
 }
 #search_div{
     padding: 15px;
-    background-color: lightseagreen;
+    background-color: rgb(145, 244, 155);
     font-style: oblique;
     font-size: medium;
     text-align: center;
@@ -22,6 +22,7 @@ body{
     margin: 0 auto;
     padding: 3px;
     text-align: right;
+    line-height: 40px;
 }
 #result_details_div{
     background-color: cornsilk;
@@ -40,10 +41,24 @@ body{
 }
 .input_field{
     width: 140px;
-    height: 35px;
+    height: 20px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
 }
+input:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+  }
+
 .btn{
     width: 100px;
-    height: 35px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgb(46, 182, 227);
+    border: none;
 }
+button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+  }
 
