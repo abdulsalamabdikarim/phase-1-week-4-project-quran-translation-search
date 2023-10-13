@@ -6,12 +6,21 @@ body{
     padding: 5px;
     background-color: lightslategray;
     font-style: oblique;
+    font-family: American Typewriter,serif;
+    text-decoration: aliceblue;
     text-align: center;
 }
-#search_bar{
+#search_div{
     padding: 15px;
     background-color: lightseagreen;
     font-style: oblique;
+    font-size: medium;
+    text-align: center;
+}
+#search_bar{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
     text-align: right;
 }
 #result_details_div{
@@ -27,4 +36,14 @@ body{
     margin: 10px;
     border-radius: 20px;
     width: auto;
+    text-align: justify;
 }
+.input_field{
+    width: 140px;
+    height: 35px;
+}
+.btn{
+    width: 100px;
+    height: 35px;
+}
+
