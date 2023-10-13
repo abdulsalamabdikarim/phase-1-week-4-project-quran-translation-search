@@ -7,6 +7,7 @@ const buildPage = function(){
 // The verses div is created and appended
     const versesDiv = document.createElement('div');
     versesDiv.id = 'verses_div';
+    versesDiv.textContent = "Your search results will appear here. Provide the details for your search then press the search button."
     document.body.appendChild(versesDiv);
 // Function calls for the three search alternatives provided
     searchForChapter();
